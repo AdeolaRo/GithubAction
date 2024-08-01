@@ -9,6 +9,7 @@ jobs:
             - name: Dit au revoir
               run: echo "Goodbye !"
     second-job :
+        needs: premier-job
         name: Mon second job
         runs-on: ubuntu-latest
         steps:
